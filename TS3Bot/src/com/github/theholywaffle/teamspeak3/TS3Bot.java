@@ -31,14 +31,14 @@ public class TS3Bot {
 	public static void main(String[] args) {
 
 		final TS3Config config = new TS3Config();
-		config.setHost("93.190.89.183");
+		config.setHost("ip");
 		config.setDebugLevel(Level.ALL);
 
 		final TS3Query query = new TS3Query(config);
 		query.connect();
 
 		final TS3Api api = query.getApi();
-		api.login("ts-3-bot", "TMzKBJlg");
+		api.login("login", "password");
 		api.selectVirtualServerById(1);
 		api.setNickname("V-Lan.de Bot");
 		System.out.println(api.getChannels());
